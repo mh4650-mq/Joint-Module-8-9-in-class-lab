@@ -514,3 +514,31 @@ public class GUI extends Application {
 
     public static void main(String[] args) { launch(args); }
 }
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import java.awt.*;
+import java.awt.event.*;
+public class StudentCRM extends JFrame {
+    public static void main(String[] args) {
+        StudentCRM studentCRM = new StudentCRM();
+        JFrame frame = new JFrame("Student Records");
+        JPanel panel = new JPanel();
+        JTextField name = new JTextField();
+        JTextField ID = new JTextField();
+        JPasswordField pass = new JPasswordField();
+        JTextField major = new JTextField();
+        JTextField GPA = new JTextField();
+
+        frame.add(panel);
+        frame.add(name);
+        frame.add(ID);
+        frame.add(pass);
+        frame.add(major);
+        frame.add(GPA);
+        frame.add(panel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 400);
+
+    }
+
+}
